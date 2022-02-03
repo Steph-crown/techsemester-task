@@ -1,0 +1,32 @@
+:root {
+    --milk-color: #f6f6ff;
+    --white: #ffffff;
+    --grey: #ececec;
+    --blue: #0071ff;
+    --blue-hover: #0051ff;
+    --placeholder: #909090;
+    --body-text: #4a4a4a;
+}
+
+/* Sets placeholder color */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--placeholder);
+    font-weight: 500;
+    font-style: italic;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--placeholder);
+    font-weight: 500;
+    font-style: italic;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--placeholder);
+    font-weight: 500;
+    font-style: italic;
+}
