@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { HeaderContainer } from "./header.style";
 
-import avatar from "./../../../assets/avatar.png";
+import avatar from "./../../assets/avatar.png";
 
 import { FiSearch } from "react-icons/fi";
 import { IoHome } from "react-icons/io5";
@@ -9,7 +9,7 @@ import { ImPlay } from "react-icons/im";
 import { NavLink } from "react-router-dom";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { CgMenuRight } from "react-icons/cg";
-import { Button } from "../../../components/button";
+import { Button } from "../button";
 
 export const Header: FC = () => {
     return (

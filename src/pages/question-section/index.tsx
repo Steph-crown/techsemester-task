@@ -3,15 +3,17 @@ import { IQuestionSectionProps } from "./question.interface";
 import { QuestionSectionContainer } from "./question.style";
 
 import avatar from "../../assets/avatar.png";
-import { MarkdownEditor } from "../markdown-editor";
+import { MarkdownEditor } from "../../components/markdown-editor";
 
 import { BsFillQuestionCircleFill } from "react-icons/bs";
-import { Button } from "../button";
-import { Header } from "../../pages/components/header";
+import { Button } from "../../components/button";
+import { Header } from "../../components/header";
 
 export const QuestionSection: FC<IQuestionSectionProps> = () => {
     return (
-        <>
+        <div
+            style={{ backgroundColor: "var(--milk-color)", minHeight: "100vh" }}
+        >
             <Header />{" "}
             <QuestionSectionContainer>
                 <figure className="avatar">
@@ -39,6 +41,6 @@ export const QuestionSection: FC<IQuestionSectionProps> = () => {
                     <Button round={true}>Post your question</Button>
                 </main>
             </QuestionSectionContainer>
-        </>
+        </div>
     );
 };

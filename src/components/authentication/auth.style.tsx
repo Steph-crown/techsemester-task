@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQueries } from "../../utils/const";
+import { mediaQueries } from "../../pages/utils/const";
 
 export const AuthContainer = styled.section`
     display: flex;
@@ -115,5 +115,36 @@ export const AuthContainer = styled.section`
     h3 {
         color: var(--body-text);
         font-size: 1.3em;
+    }
+    @media (max-width: ${mediaQueries.md}) {
+        .left {
+            width: 400px;
+        }
+        main {
+            width: calc(100% - 400px);
+            button {
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        .left {
+            width: 300px;
+        }
+        main {
+            width: calc(100% - 300px);
+        }
+    }
+    @media (max-width: ${mediaQueries.sm}) {
+        .left {
+            display: none;
+        }
+        main {
+            width: 100%;
+            button {
+                width: 100%;
+            }
+            padding: 2em calc(0.07 * 100vw);
+        }
     }
 `;

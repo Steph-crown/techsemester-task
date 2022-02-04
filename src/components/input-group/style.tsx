@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const InputGroupContainer = styled.label<{
     width?: string;
     error: boolean;
+    password?: boolean;
 }>`
     display: block;
     width: ${(props) => props.width || "100%"};
@@ -20,7 +21,7 @@ export const InputGroupContainer = styled.label<{
     small {
         font-family: Inter;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 14px;
         line-height: 17px;
         color: #425466;
@@ -34,6 +35,7 @@ export const InputGroupContainer = styled.label<{
         font-weight: 400;
         color: ${({ error }) => (error ? "var(--error)" : "#222")};
         padding: 16px;
+        padding-right: ${(props) => (props.password ? "40px" : "16px")};
         box-shadow: 0px 1px 2px rgba(50, 50, 71, 0.08),
             0px 0px 1px rgba(50, 50, 71, 0.2);
         border-radius: 6px;
@@ -76,5 +78,18 @@ export const InputGroupContainer = styled.label<{
         color: var(--error);
         display: inline-block;
         margin-top: 8px;
+    }
+
+    & > div {
+        position: relative;
+
+        svg {
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 16px;
+        }
     }
 `;

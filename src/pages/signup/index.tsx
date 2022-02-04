@@ -1,10 +1,10 @@
 import { useFormik } from "formik";
 import { FC, useState } from "react";
 import { InputGroup } from "../../components/input-group";
-import { Authentication } from "../components/authentication";
+import { Authentication } from "../../components/authentication";
 import { ISignUpData } from "./signup.interface";
 
-import { Checkbox } from "../components/checkbox";
+import { Checkbox } from "../../components/checkbox";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/button";
 
@@ -101,6 +101,7 @@ export const Signup: FC = () => {
                                 formik.touched.first_name &&
                                 formik.errors.first_name
                             }
+                            type="password"
                         />{" "}
                         <InputGroup
                             label="Confirm Password"
@@ -114,6 +115,7 @@ export const Signup: FC = () => {
                                 formik.touched.first_name &&
                                 formik.errors.first_name
                             }
+                            type="password"
                         />{" "}
                         <div className="checkbox-list">
                             <Checkbox

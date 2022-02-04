@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { mediaQueries } from "../../pages/utils/const";
+import { mediaQueries } from "../utils/const";
 
 export const QuestionSectionContainer = styled.div`
     background-color: var(--white);
+    min-height: 100vh;
     padding: 1.5em;
     width: 100%;
     max-width: 800px;

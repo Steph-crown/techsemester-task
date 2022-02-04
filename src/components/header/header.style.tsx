@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQueries } from "../../utils/const";
+import { mediaQueries } from "../../pages/utils/const";
 
 export const HeaderContainer = styled.div`
     background-color: white;
