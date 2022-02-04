@@ -7,8 +7,11 @@ export const Button: FC<IButtonProps> = ({
     onClick,
     className,
     round,
+    type,
 }: IButtonProps) => {
     return (
-        <ButtonContainer {...{ round, className }}>{children}</ButtonContainer>
+        <ButtonContainer {...{ round, className, type }}>
+            {children}
+        </ButtonContainer>
     );
 };

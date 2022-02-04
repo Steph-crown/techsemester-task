@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQueries } from "../utils/const";
+import { mediaQueries } from "../../utils/const";
 
 export const QuestionSectionContainer = styled.div`
     background-color: var(--white);

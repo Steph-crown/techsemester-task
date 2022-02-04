@@ -3,4 +3,5 @@ export interface IButtonProps {
     onClick?: () => void;
     className?: string;
     round?: boolean;
+    type?: "button" | "submit" | "reset";
 }
